@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Multi-Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Spotify Search</h1>
+
+  <input type="text" id="searchInput" placeholder="Search for music..." />
+  <select id="searchType">
+    <option value="track">Track</option>
+    <option value="album">Album</option>
+    <option value="artist">Artist</option>
+  </select>
+  <button id="searchBtn">Search</button>
+<h2>Your Favorites</h2>
+<div id="favorites"> ... </div>
+<div style="position:relative;">
+  <hr class="section-separator">
+  <span class="section-separator-label">Search Results</span>
+</div>
+<div id="results"> ... </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

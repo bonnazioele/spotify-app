@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Spotify dark background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #1DB954; /* Spotify green */
+  text-align: center;
+}
+
+input, select, button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+input, select {
+  background-color: #282828; /* Dark input background */
+  color: #ffffff;
+}
+
+button {
+  background-color: #1DB954; /* Spotify green */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1ed760; /* Lighter green on hover */
+}
+
+/* Results and Favorites Grid */
+#results, #favorites {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #181818; /* Dark card background */
+  border: 1px solid #282828; /* Subtle border */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #b3b3b3; /* Spotify light gray text */
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #1DB954; /* Spotify green */
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #1ed760; /* Lighter green on hover */
+}
+
+/* Audio Player */
+.card audio {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Section Separator */
+.section-separator {
+  border: none;
+  border-top: 1px solid #282828;
+  margin: 20px 0;
+}
+
+.section-separator-label {
+  display: block;
+  font-size: 1.5em;
+  color: #1DB954; /* Spotify green */
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
